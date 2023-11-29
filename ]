@@ -1,0 +1,7 @@
+(ns advent-of-code-2023.2018.day-1
+  (:require [advent-of-code-2023.core :as core]
+            [clojure.string :as str]))
+(def input
+  (core/get-input 2018 1))
+
+

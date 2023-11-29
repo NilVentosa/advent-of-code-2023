@@ -4,19 +4,19 @@
 (def input
   (core/get-input 2022 1))
 
-(defn get-clean-input [input]
+(defn clean-input [input]
   (map #(str/split % #"\n") (str/split input #"\n *\n *")))
 
-(defn sum-stuff [clean-input]
+(defn sum-calories [clean-input]
   (for [elf-calories clean-input]
     (reduce + 0 (map parse-long elf-calories))))
 
 (defn part-1 []
-  (apply max (sum-stuff (get-clean-input input))))
+  (apply max (sum-calories (clean-input input))))
 
 (part-1)
 
 (defn part-2 []
-  (reduce + (take 3 (sort > (sum-stuff (get-clean-input input))))))
+  (reduce + (take 3 (sort > (sum-calories (clean-input input))))))
 
 (part-2)
