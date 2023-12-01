@@ -20,15 +20,13 @@
 
 (part-1 clean-input)
 
-(defn differ-by-one-char? [str1 srtr2]
-  )
+(defn differ-by-one-char? [str1 srtr2])
 
 (differ-by-one-char? "hello" "hellp")
 
 (defn part-2 [input]
   (let [twos (filter #(has-n-char-repetitions? % 2) input)
         threes (filter #(has-n-char-repetitions? % 3) input)
-        all (concat twos threes)]
-     ))
+        all (concat twos threes)]))
 
 (part-2 test-input)
