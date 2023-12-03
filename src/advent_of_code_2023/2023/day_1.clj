@@ -1,7 +1,6 @@
 (ns advent-of-code-2023.2023.day-1
   (:require [advent-of-code-2023.core :as core]
-            [clojure.string :as str]
-            [clojure.string :as s]))
+            [clojure.string :as str]))
 
 (def input
   (str/split (core/get-input 2023 1) #"\n"))
